@@ -1,20 +1,38 @@
-:root{
+/* BODY */
+:root {
     --dark: black;
     --light: white;
     --border: red;
     --hero: rgb(4, 84, 231);
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+main {
+    margin: 0 1em;
+}
+
+
+/* HEADER */
 header {
-margin: 0 1em;
+    margin: 0 1em;
 
 }
-.theme-button{
+
+.theme-button {
     display: flex;
     justify-content: flex-end;
     padding-top: .5em;
@@ -25,46 +43,64 @@ header button {
     color: var(--light);
     border: none;
     padding: .4em;
-    
-    
+
+
 }
 
-h1 {
-    text-align: center;
-}
 
-.hero{
-    text-align: center;
+/* MAIN */
+.hero {
     color: var(--hero);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero img{
+    height: 5em;
+    width: 5em;
+    border-radius: 5em;
 }
 
-#ml{
+#ml {
     display: none;
 }
 
-
-
-
-
-
+/* All Buttons */
 .buttons {
     padding: 1em;
     align-items: center;
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
 }
 
-.buttons button {
+button {
     background: none;
     border: var(--dark) 1px solid;
     padding: .4em;
 }
-.buttons button:hover {
+
+button:hover {
     background-color: var(--dark);
     color: var(--light);
 }
 
+/* Socials */
+socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socials button:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+
+
+/* Dark Mode */
 .dark-mode {
     background-color: var(--dark);
     color: var(--light);
@@ -78,6 +114,63 @@ h1 {
 }
 
 
+/* Skills */
+.skills {
+    margin-top: 1em;
+    
+}
+
+.skills button:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.desc {
+    text-align: center;
+    margin-top: 1em;
+}
+.skills .proficiency{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.skills .proficiency button{
+    margin-top: 1em;
+
+}
+
+
+
+/* Projects */
+.projects {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project button {
+    width: fit-content;
+    margin-top: 1em;
+}
+
+.project button:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+
+
+/* FOOTER */
 footer {
     text-align: center;
 }
